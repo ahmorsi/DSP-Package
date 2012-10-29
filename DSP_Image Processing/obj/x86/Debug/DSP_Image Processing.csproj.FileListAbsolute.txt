@@ -1,0 +1,13 @@
+X:\College\4th Year\CSYS '13\Digital Signal Processing\Projects\DSP_Image Processing\DSP_Image Processing\bin\Debug\BasicFilters.cs
+X:\College\4th Year\CSYS '13\Digital Signal Processing\Projects\DSP_Image Processing\DSP_Image Processing\bin\Debug\Thresholding.cs
+X:\College\4th Year\CSYS '13\Digital Signal Processing\Projects\DSP_Image Processing\DSP_Image Processing\bin\Debug\DSP_Image Processing.exe
+X:\College\4th Year\CSYS '13\Digital Signal Processing\Projects\DSP_Image Processing\DSP_Image Processing\bin\Debug\DSP_Image Processing.pdb
+X:\College\4th Year\CSYS '13\Digital Signal Processing\Projects\DSP_Image Processing\DSP_Image Processing\obj\x86\Debug\ResolveAssemblyReference.cache
+X:\College\4th Year\CSYS '13\Digital Signal Processing\Projects\DSP_Image Processing\DSP_Image Processing\obj\x86\Debug\DSP_Image_Processing.Form1.resources
+X:\College\4th Year\CSYS '13\Digital Signal Processing\Projects\DSP_Image Processing\DSP_Image Processing\obj\x86\Debug\DSP_Image_Processing.Properties.Resources.resources
+X:\College\4th Year\CSYS '13\Digital Signal Processing\Projects\DSP_Image Processing\DSP_Image Processing\obj\x86\Debug\DSP_Image_Processing.ThresholdingInputDialog.resources
+X:\College\4th Year\CSYS '13\Digital Signal Processing\Projects\DSP_Image Processing\DSP_Image Processing\obj\x86\Debug\DSP_Image_Processing.WindowSizeDialog.resources
+X:\College\4th Year\CSYS '13\Digital Signal Processing\Projects\DSP_Image Processing\DSP_Image Processing\obj\x86\Debug\GenerateResource.read.1.tlog
+X:\College\4th Year\CSYS '13\Digital Signal Processing\Projects\DSP_Image Processing\DSP_Image Processing\obj\x86\Debug\GenerateResource.write.1.tlog
+X:\College\4th Year\CSYS '13\Digital Signal Processing\Projects\DSP_Image Processing\DSP_Image Processing\obj\x86\Debug\DSP_Image Processing.exe
+X:\College\4th Year\CSYS '13\Digital Signal Processing\Projects\DSP_Image Processing\DSP_Image Processing\obj\x86\Debug\DSP_Image Processing.pdb
