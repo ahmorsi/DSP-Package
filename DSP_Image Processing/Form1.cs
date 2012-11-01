@@ -14,6 +14,7 @@ namespace DSP_Image_Processing
     public partial class Form1 : Form
     {
         private Bitmap oldImage, newImage;
+        public List<byte> structureElementVal;
         private ConvolutionBasedFilter ConvFilter;
         private Thresholding imageThreshold;
         private Morphology morphImage;
@@ -220,7 +221,26 @@ namespace DSP_Image_Processing
             }
         }
 
-        private void boundryDetectionToolStripMenuItem_Click(object sender, EventArgs e)
+        private void erossionToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Structural_Element_Options seOptions = new Structural_Element_Options(this);
+            if (seOptions.ShowDialog() == DialogResult.OK)
+            {
+                morphImage = new Morphology(windowHeight, windowWidth,structureElementVal);
+                Stopwatch stopWatch = new Stopwatch();
+                stopWatch.Start();
+                picBox_NewBtmp.Image = morphImage.calculateErosion(oldImage);
+                stopWatch.Stop();
+                // Get the elapsed time as a TimeSpan value.
+                TimeSpan ts = stopWatch.Elapsed;
+                ProcessingTimeLabel.Text = "Processing Time : " + String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+                               ts.Hours, ts.Minutes, ts.Seconds,
+                               ts.Milliseconds / 10);
+                ProcessingTimeLabel.Visible = true;
+            }
+        }
+
+        private void boundryDetectionToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
@@ -235,10 +255,25 @@ namespace DSP_Image_Processing
             ProcessingTimeLabel.Visible = true;
         }
 
-        private void erossionToolStripMenuItem_Click(object sender, EventArgs e)
+        private void dilationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            picBox_NewBtmp.Image = morphImage.calculateErosion(oldImage);
+            Structural_Element_Options seOptions = new Structural_Element_Options(this);
+            if (seOptions.ShowDialog() == DialogResult.OK)
+            {
+                morphImage = new Morphology(windowHeight, windowWidth,structureElementVal);
+                Stopwatch stopWatch = new Stopwatch();
+                stopWatch.Start();
+                picBox_NewBtmp.Image = morphImage.calculateDilation(oldImage);
+                stopWatch.Stop();
+                // Get the elapsed time as a TimeSpan value.
+                TimeSpan ts = stopWatch.Elapsed;
+                ProcessingTimeLabel.Text = "Processing Time : " + String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+                               ts.Hours, ts.Minutes, ts.Seconds,
+                               ts.Milliseconds / 10);
+                ProcessingTimeLabel.Visible = true;
+            }
         }
+
 
     }
 }

@@ -48,8 +48,10 @@
             this.averageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adaptiveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ProcessingTimeLabel = new System.Windows.Forms.Label();
-            this.boundryDetectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.erossionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.morphologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.erossionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.boundryDetectionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.dilationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_oldBtmp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_NewBtmp)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -106,8 +108,7 @@
             this.edgeDetectionToolStripMenuItem,
             this.sharpeningToolStripMenuItem,
             this.thresholdingToolStripMenuItem,
-            this.boundryDetectionToolStripMenuItem,
-            this.erossionToolStripMenuItem});
+            this.morphologyToolStripMenuItem});
             this.filterToolStripMenuItem.Name = "filterToolStripMenuItem";
             this.filterToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.filterToolStripMenuItem.Text = "Filter";
@@ -220,19 +221,36 @@
             this.ProcessingTimeLabel.Text = "label1";
             this.ProcessingTimeLabel.Visible = false;
             // 
-            // boundryDetectionToolStripMenuItem
+            // morphologyToolStripMenuItem
             // 
-            this.boundryDetectionToolStripMenuItem.Name = "boundryDetectionToolStripMenuItem";
-            this.boundryDetectionToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
-            this.boundryDetectionToolStripMenuItem.Text = "Boundry Detection";
-            this.boundryDetectionToolStripMenuItem.Click += new System.EventHandler(this.boundryDetectionToolStripMenuItem_Click);
+            this.morphologyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.erossionToolStripMenuItem1,
+            this.boundryDetectionToolStripMenuItem1,
+            this.dilationToolStripMenuItem});
+            this.morphologyToolStripMenuItem.Name = "morphologyToolStripMenuItem";
+            this.morphologyToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.morphologyToolStripMenuItem.Text = "Morphology";
             // 
-            // erossionToolStripMenuItem
+            // erossionToolStripMenuItem1
             // 
-            this.erossionToolStripMenuItem.Name = "erossionToolStripMenuItem";
-            this.erossionToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
-            this.erossionToolStripMenuItem.Text = "Erossion";
-            this.erossionToolStripMenuItem.Click += new System.EventHandler(this.erossionToolStripMenuItem_Click);
+            this.erossionToolStripMenuItem1.Name = "erossionToolStripMenuItem1";
+            this.erossionToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
+            this.erossionToolStripMenuItem1.Text = "Erossion";
+            this.erossionToolStripMenuItem1.Click += new System.EventHandler(this.erossionToolStripMenuItem1_Click);
+            // 
+            // boundryDetectionToolStripMenuItem1
+            // 
+            this.boundryDetectionToolStripMenuItem1.Name = "boundryDetectionToolStripMenuItem1";
+            this.boundryDetectionToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
+            this.boundryDetectionToolStripMenuItem1.Text = "Boundry Detection";
+            this.boundryDetectionToolStripMenuItem1.Click += new System.EventHandler(this.boundryDetectionToolStripMenuItem1_Click);
+            // 
+            // dilationToolStripMenuItem
+            // 
+            this.dilationToolStripMenuItem.Name = "dilationToolStripMenuItem";
+            this.dilationToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.dilationToolStripMenuItem.Text = "Dilation";
+            this.dilationToolStripMenuItem.Click += new System.EventHandler(this.dilationToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -277,8 +295,10 @@
         private System.Windows.Forms.ToolStripMenuItem averageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem adaptiveToolStripMenuItem;
         private System.Windows.Forms.Label ProcessingTimeLabel;
-        private System.Windows.Forms.ToolStripMenuItem boundryDetectionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem erossionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem morphologyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem erossionToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem boundryDetectionToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem dilationToolStripMenuItem;
     }
 }
 

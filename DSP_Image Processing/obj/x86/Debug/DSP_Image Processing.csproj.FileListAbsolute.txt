@@ -11,3 +11,31 @@ X:\College\4th Year\CSYS '13\Digital Signal Processing\Projects\DSP_Image Proces
 X:\College\4th Year\CSYS '13\Digital Signal Processing\Projects\DSP_Image Processing\DSP_Image Processing\obj\x86\Debug\GenerateResource.write.1.tlog
 X:\College\4th Year\CSYS '13\Digital Signal Processing\Projects\DSP_Image Processing\DSP_Image Processing\obj\x86\Debug\DSP_Image Processing.exe
 X:\College\4th Year\CSYS '13\Digital Signal Processing\Projects\DSP_Image Processing\DSP_Image Processing\obj\x86\Debug\DSP_Image Processing.pdb
+C:\Users\Anas A. Ismail\Documents\GitHub\DSP-Package\DSP_Image Processing\bin\Debug\BasicFilters.cs
+C:\Users\Anas A. Ismail\Documents\GitHub\DSP-Package\DSP_Image Processing\bin\Debug\Thresholding.cs
+C:\Users\Anas A. Ismail\Documents\GitHub\DSP-Package\DSP_Image Processing\bin\Debug\DSP_Image Processing.exe
+C:\Users\Anas A. Ismail\Documents\GitHub\DSP-Package\DSP_Image Processing\bin\Debug\DSP_Image Processing.pdb
+C:\Users\Anas A. Ismail\Documents\GitHub\DSP-Package\DSP_Image Processing\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Anas A. Ismail\Documents\GitHub\DSP-Package\DSP_Image Processing\obj\x86\Debug\DSP_Image_Processing.Form1.resources
+C:\Users\Anas A. Ismail\Documents\GitHub\DSP-Package\DSP_Image Processing\obj\x86\Debug\DSP_Image_Processing.Properties.Resources.resources
+C:\Users\Anas A. Ismail\Documents\GitHub\DSP-Package\DSP_Image Processing\obj\x86\Debug\DSP_Image_Processing.ThresholdingInputDialog.resources
+C:\Users\Anas A. Ismail\Documents\GitHub\DSP-Package\DSP_Image Processing\obj\x86\Debug\DSP_Image_Processing.WindowSizeDialog.resources
+C:\Users\Anas A. Ismail\Documents\GitHub\DSP-Package\DSP_Image Processing\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Anas A. Ismail\Documents\GitHub\DSP-Package\DSP_Image Processing\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Anas A. Ismail\Documents\GitHub\DSP-Package\DSP_Image Processing\obj\x86\Debug\DSP_Image Processing.exe
+C:\Users\Anas A. Ismail\Documents\GitHub\DSP-Package\DSP_Image Processing\obj\x86\Debug\DSP_Image Processing.pdb
+C:\Users\Anas A. Ismail\Documents\GitHub\DSP-Package\DSP_Image Processing\obj\x86\Debug\DSP_Image_Processing.Structural_Element_Options.resources
+C:\Users\Anas A. Ismail\Documents\DSP-Package\DSP_Image Processing\obj\x86\Debug\DSP_Image Processing.exe
+C:\Users\Anas A. Ismail\Documents\DSP-Package\DSP_Image Processing\obj\x86\Debug\DSP_Image Processing.pdb
+C:\Users\Anas A. Ismail\Documents\DSP-Package\DSP_Image Processing\bin\Debug\BasicFilters.cs
+C:\Users\Anas A. Ismail\Documents\DSP-Package\DSP_Image Processing\bin\Debug\Thresholding.cs
+C:\Users\Anas A. Ismail\Documents\DSP-Package\DSP_Image Processing\bin\Debug\DSP_Image Processing.exe
+C:\Users\Anas A. Ismail\Documents\DSP-Package\DSP_Image Processing\bin\Debug\DSP_Image Processing.pdb
+C:\Users\Anas A. Ismail\Documents\DSP-Package\DSP_Image Processing\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Anas A. Ismail\Documents\DSP-Package\DSP_Image Processing\obj\x86\Debug\DSP_Image_Processing.Form1.resources
+C:\Users\Anas A. Ismail\Documents\DSP-Package\DSP_Image Processing\obj\x86\Debug\DSP_Image_Processing.Properties.Resources.resources
+C:\Users\Anas A. Ismail\Documents\DSP-Package\DSP_Image Processing\obj\x86\Debug\DSP_Image_Processing.Structural_Element_Options.resources
+C:\Users\Anas A. Ismail\Documents\DSP-Package\DSP_Image Processing\obj\x86\Debug\DSP_Image_Processing.ThresholdingInputDialog.resources
+C:\Users\Anas A. Ismail\Documents\DSP-Package\DSP_Image Processing\obj\x86\Debug\DSP_Image_Processing.WindowSizeDialog.resources
+C:\Users\Anas A. Ismail\Documents\DSP-Package\DSP_Image Processing\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Anas A. Ismail\Documents\DSP-Package\DSP_Image Processing\obj\x86\Debug\GenerateResource.write.1.tlog

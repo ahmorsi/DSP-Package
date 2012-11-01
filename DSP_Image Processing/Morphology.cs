@@ -27,10 +27,12 @@ namespace DSP_Image_Processing
                 structureElement.Add(255);
             structureElement[0] = structureElement[2] = structureElement[8] = structureElement[6] = 0;
         }
-        public Morphology(int windowHeight, int windowWidth)
+        public Morphology(int windowHeight, int windowWidth,List<byte>val)
         {
             this.windowHeight = windowHeight;
             this.windowWidth = windowWidth;
+            structureElement = val;
+
         }
         public Bitmap calculateErosion(Bitmap oldImage)
         {

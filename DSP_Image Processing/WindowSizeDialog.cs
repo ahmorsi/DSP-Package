@@ -42,5 +42,7 @@ namespace DSP_Image_Processing
                 MessageBox.Show("Plz Enter a Value");
             }
         }
+
+       
     }
 }
