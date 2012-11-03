@@ -9,6 +9,10 @@ namespace DSP_Image_Processing
 {
     class BasicFilters
     {
+		public static Bitmap ToBodaScale(Bitmap oldImage)
+		{
+			return new Bitmap(5, 5);
+		}
         public static Bitmap ToGrayScale(Bitmap oldImage)
         {
             Bitmap newImage;
