@@ -15,7 +15,7 @@
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -35,6 +35,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FourierTransform">
+      <HintPath>..\..\FourierTransform\distrib\FourierTransform.dll</HintPath>
+    </Reference>
+    <Reference Include="FourierTransformNative">
+      <HintPath>..\..\FourierTransform\distrib\FourierTransformNative.dll</HintPath>
+    </Reference>
+    <Reference Include="MWArray, Version=2.11.1.0, Culture=neutral, PublicKeyToken=e1d84a0da19db86f, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\MATLAB\R2011b\toolbox\dotnetbuilder\bin\win64\v2.0\MWArray.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -50,12 +60,27 @@
     <Compile Include="BasicFilters.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="ButterWorth_FactorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ButterWorth_FactorDialog.Designer.cs">
+      <DependentUpon>ButterWorth_FactorDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConvolutionBasedFilter.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrequencyDomain\FrequencyDomainUtility.cs" />
+    <Compile Include="FrequencyDomain\HighPassFilter.cs" />
+    <Compile Include="FrequencyDomain\LowPassFilter.cs" />
+    <Compile Include="In_frequencyDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="In_frequencyDialog.designer.cs">
+      <DependentUpon>In_frequencyDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="Morphology.cs" />
     <Compile Include="Program.cs" />
@@ -81,8 +106,14 @@
     <Compile Include="WindowSizeDialog.Designer.cs">
       <DependentUpon>WindowSizeDialog.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ButterWorth_FactorDialog.resx">
+      <DependentUpon>ButterWorth_FactorDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="in_frequencyDialog.resx">
+      <DependentUpon>In_frequencyDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

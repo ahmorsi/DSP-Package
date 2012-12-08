@@ -47,11 +47,20 @@
             this.staticToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.averageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adaptiveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ProcessingTimeLabel = new System.Windows.Forms.Label();
             this.morphologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.erossionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.boundryDetectionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.dilationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.frequencyDomainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lowPassFilterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.idealLowPassFilterMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.butterWorthLowPassFilterMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gaussianLowPassFilterMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.highPassFilterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.idealHighPassFilterMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.butterWorthHighPassFilterMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gaussianHighPassFilterMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ProcessingTimeLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_oldBtmp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_NewBtmp)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -108,7 +117,8 @@
             this.edgeDetectionToolStripMenuItem,
             this.sharpeningToolStripMenuItem,
             this.thresholdingToolStripMenuItem,
-            this.morphologyToolStripMenuItem});
+            this.morphologyToolStripMenuItem,
+            this.frequencyDomainToolStripMenuItem});
             this.filterToolStripMenuItem.Name = "filterToolStripMenuItem";
             this.filterToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.filterToolStripMenuItem.Text = "Filter";
@@ -119,7 +129,7 @@
             this.fastToolStripMenuItem,
             this.slowToolStripMenuItem});
             this.smoothingToolStripMenuItem.Name = "smoothingToolStripMenuItem";
-            this.smoothingToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.smoothingToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.smoothingToolStripMenuItem.Text = "Smoothing";
             // 
             // fastToolStripMenuItem
@@ -139,14 +149,14 @@
             // grayScaleToolStripMenuItem
             // 
             this.grayScaleToolStripMenuItem.Name = "grayScaleToolStripMenuItem";
-            this.grayScaleToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.grayScaleToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.grayScaleToolStripMenuItem.Text = "GrayScale";
             this.grayScaleToolStripMenuItem.Click += new System.EventHandler(this.grayScaleToolStripMenuItem_Click);
             // 
             // invertColorsToolStripMenuItem
             // 
             this.invertColorsToolStripMenuItem.Name = "invertColorsToolStripMenuItem";
-            this.invertColorsToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.invertColorsToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.invertColorsToolStripMenuItem.Text = "Invert Colors";
             this.invertColorsToolStripMenuItem.Click += new System.EventHandler(this.invertColorsToolStripMenuItem_Click);
             // 
@@ -155,7 +165,7 @@
             this.edgeDetectionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.laplacianEdgeDetectionToolStripMenuItem});
             this.edgeDetectionToolStripMenuItem.Name = "edgeDetectionToolStripMenuItem";
-            this.edgeDetectionToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.edgeDetectionToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.edgeDetectionToolStripMenuItem.Text = "Edge Detection";
             // 
             // laplacianEdgeDetectionToolStripMenuItem
@@ -170,7 +180,7 @@
             this.sharpeningToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.laplacianSharpeningToolStripMenuItem});
             this.sharpeningToolStripMenuItem.Name = "sharpeningToolStripMenuItem";
-            this.sharpeningToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.sharpeningToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.sharpeningToolStripMenuItem.Text = "Sharpening";
             // 
             // laplacianSharpeningToolStripMenuItem
@@ -187,7 +197,7 @@
             this.averageToolStripMenuItem,
             this.adaptiveToolStripMenuItem});
             this.thresholdingToolStripMenuItem.Name = "thresholdingToolStripMenuItem";
-            this.thresholdingToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.thresholdingToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.thresholdingToolStripMenuItem.Text = "Thresholding";
             // 
             // staticToolStripMenuItem
@@ -211,16 +221,6 @@
             this.adaptiveToolStripMenuItem.Text = "Adaptive";
             this.adaptiveToolStripMenuItem.Click += new System.EventHandler(this.adaptiveToolStripMenuItem_Click);
             // 
-            // ProcessingTimeLabel
-            // 
-            this.ProcessingTimeLabel.AutoSize = true;
-            this.ProcessingTimeLabel.Location = new System.Drawing.Point(37, 485);
-            this.ProcessingTimeLabel.Name = "ProcessingTimeLabel";
-            this.ProcessingTimeLabel.Size = new System.Drawing.Size(35, 13);
-            this.ProcessingTimeLabel.TabIndex = 6;
-            this.ProcessingTimeLabel.Text = "label1";
-            this.ProcessingTimeLabel.Visible = false;
-            // 
             // morphologyToolStripMenuItem
             // 
             this.morphologyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -228,7 +228,7 @@
             this.boundryDetectionToolStripMenuItem1,
             this.dilationToolStripMenuItem});
             this.morphologyToolStripMenuItem.Name = "morphologyToolStripMenuItem";
-            this.morphologyToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.morphologyToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.morphologyToolStripMenuItem.Text = "Morphology";
             // 
             // erossionToolStripMenuItem1
@@ -252,6 +252,87 @@
             this.dilationToolStripMenuItem.Text = "Dilation";
             this.dilationToolStripMenuItem.Click += new System.EventHandler(this.dilationToolStripMenuItem_Click);
             // 
+            // frequencyDomainToolStripMenuItem
+            // 
+            this.frequencyDomainToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lowPassFilterToolStripMenuItem,
+            this.highPassFilterToolStripMenuItem});
+            this.frequencyDomainToolStripMenuItem.Name = "frequencyDomainToolStripMenuItem";
+            this.frequencyDomainToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.frequencyDomainToolStripMenuItem.Text = "Frequency Domain";
+            // 
+            // lowPassFilterToolStripMenuItem
+            // 
+            this.lowPassFilterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.idealLowPassFilterMenuItem,
+            this.butterWorthLowPassFilterMenuItem,
+            this.gaussianLowPassFilterMenuItem});
+            this.lowPassFilterToolStripMenuItem.Name = "lowPassFilterToolStripMenuItem";
+            this.lowPassFilterToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.lowPassFilterToolStripMenuItem.Text = "Low Pass Filter";
+            // 
+            // idealLowPassFilterMenuItem
+            // 
+            this.idealLowPassFilterMenuItem.Name = "idealLowPassFilterMenuItem";
+            this.idealLowPassFilterMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.idealLowPassFilterMenuItem.Text = "Ideal";
+            this.idealLowPassFilterMenuItem.Click += new System.EventHandler(this.idealLowPassFilterMenuItem_Click);
+            // 
+            // butterWorthLowPassFilterMenuItem
+            // 
+            this.butterWorthLowPassFilterMenuItem.Name = "butterWorthLowPassFilterMenuItem";
+            this.butterWorthLowPassFilterMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.butterWorthLowPassFilterMenuItem.Text = "Butter Worth";
+            this.butterWorthLowPassFilterMenuItem.Click += new System.EventHandler(this.butterWorthLowPassFilterMenuItem_Click);
+            // 
+            // gaussianLowPassFilterMenuItem
+            // 
+            this.gaussianLowPassFilterMenuItem.Name = "gaussianLowPassFilterMenuItem";
+            this.gaussianLowPassFilterMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gaussianLowPassFilterMenuItem.Text = "Gaussian";
+            this.gaussianLowPassFilterMenuItem.Click += new System.EventHandler(this.gaussianLowPassFilterMenuItem_Click);
+            // 
+            // highPassFilterToolStripMenuItem
+            // 
+            this.highPassFilterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.idealHighPassFilterMenuItem,
+            this.butterWorthHighPassFilterMenuItem,
+            this.gaussianHighPassFilterMenuItem});
+            this.highPassFilterToolStripMenuItem.Name = "highPassFilterToolStripMenuItem";
+            this.highPassFilterToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.highPassFilterToolStripMenuItem.Text = "High Pass Filter";
+            // 
+            // idealHighPassFilterMenuItem
+            // 
+            this.idealHighPassFilterMenuItem.Name = "idealHighPassFilterMenuItem";
+            this.idealHighPassFilterMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.idealHighPassFilterMenuItem.Text = "Ideal";
+            this.idealHighPassFilterMenuItem.Click += new System.EventHandler(this.idealHighPassFilterMenuItem_Click);
+            // 
+            // butterWorthHighPassFilterMenuItem
+            // 
+            this.butterWorthHighPassFilterMenuItem.Name = "butterWorthHighPassFilterMenuItem";
+            this.butterWorthHighPassFilterMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.butterWorthHighPassFilterMenuItem.Text = "Butter Worth";
+            this.butterWorthHighPassFilterMenuItem.Click += new System.EventHandler(this.butterWorthHighPassFilterMenuItem_Click);
+            // 
+            // gaussianHighPassFilterMenuItem
+            // 
+            this.gaussianHighPassFilterMenuItem.Name = "gaussianHighPassFilterMenuItem";
+            this.gaussianHighPassFilterMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gaussianHighPassFilterMenuItem.Text = "Gaussian";
+            this.gaussianHighPassFilterMenuItem.Click += new System.EventHandler(this.gaussianHighPassFilterMenuItem_Click);
+            // 
+            // ProcessingTimeLabel
+            // 
+            this.ProcessingTimeLabel.AutoSize = true;
+            this.ProcessingTimeLabel.Location = new System.Drawing.Point(37, 485);
+            this.ProcessingTimeLabel.Name = "ProcessingTimeLabel";
+            this.ProcessingTimeLabel.Size = new System.Drawing.Size(35, 13);
+            this.ProcessingTimeLabel.TabIndex = 6;
+            this.ProcessingTimeLabel.Text = "label1";
+            this.ProcessingTimeLabel.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -263,7 +344,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Image Processing Package";
             ((System.ComponentModel.ISupportInitialize)(this.picBox_oldBtmp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_NewBtmp)).EndInit();
             this.menuStrip1.ResumeLayout(false);
@@ -299,6 +380,15 @@
         private System.Windows.Forms.ToolStripMenuItem erossionToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem boundryDetectionToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem dilationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem frequencyDomainToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lowPassFilterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem idealLowPassFilterMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem butterWorthLowPassFilterMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gaussianLowPassFilterMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem highPassFilterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem idealHighPassFilterMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem butterWorthHighPassFilterMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gaussianHighPassFilterMenuItem;
     }
 }
 

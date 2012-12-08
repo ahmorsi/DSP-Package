@@ -18,7 +18,10 @@ namespace DSP_Image_Processing
         private ConvolutionBasedFilter ConvFilter;
         private Thresholding imageThreshold;
         private Morphology morphImage;
+        public int D0; // Cutoff Frequency
+        public int ButterWorthFactor;
         public int ThresholdValue,windowWidth,windowHeight;
+        
         public Form1()
         {
             InitializeComponent();
@@ -272,6 +275,125 @@ namespace DSP_Image_Processing
                                ts.Milliseconds / 10);
                 ProcessingTimeLabel.Visible = true;
             }
+        }
+
+        private void idealLowPassFilterMenuItem_Click(object sender, EventArgs e)
+        {
+            In_frequencyDialog frequencyDialog = new In_frequencyDialog(this);
+            if (frequencyDialog.ShowDialog() != DialogResult.OK)
+                return;
+            
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+            picBox_NewBtmp.Image = FrequencyDomain.LowPassFilter.applyIdealFilter(oldImage, D0);
+            stopWatch.Stop();
+            // Get the elapsed time as a TimeSpan value.
+            TimeSpan ts = stopWatch.Elapsed;
+            ProcessingTimeLabel.Text = "Processing Time : " + String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+                           ts.Hours, ts.Minutes, ts.Seconds,
+                           ts.Milliseconds / 10);
+            ProcessingTimeLabel.Visible = true;
+        }
+
+        private void gaussianLowPassFilterMenuItem_Click(object sender, EventArgs e)
+        {
+            In_frequencyDialog frequencyDialog = new In_frequencyDialog(this);
+            if (frequencyDialog.ShowDialog() != DialogResult.OK)
+                return;
+
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+            picBox_NewBtmp.Image = FrequencyDomain.LowPassFilter.applyGaussianFilter(oldImage, D0);
+            stopWatch.Stop();
+            // Get the elapsed time as a TimeSpan value.
+            TimeSpan ts = stopWatch.Elapsed;
+            ProcessingTimeLabel.Text = "Processing Time : " + String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+                           ts.Hours, ts.Minutes, ts.Seconds,
+                           ts.Milliseconds / 10);
+            ProcessingTimeLabel.Visible = true;
+        }
+
+        private void idealHighPassFilterMenuItem_Click(object sender, EventArgs e)
+        {
+            In_frequencyDialog frequencyDialog = new In_frequencyDialog(this);
+            if (frequencyDialog.ShowDialog() != DialogResult.OK)
+                return;
+
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+            picBox_NewBtmp.Image = FrequencyDomain.HighPassFilter.applyIdealFilter(oldImage, D0);
+            stopWatch.Stop();
+            // Get the elapsed time as a TimeSpan value.
+            TimeSpan ts = stopWatch.Elapsed;
+            ProcessingTimeLabel.Text = "Processing Time : " + String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+                           ts.Hours, ts.Minutes, ts.Seconds,
+                           ts.Milliseconds / 10);
+            ProcessingTimeLabel.Visible = true;
+
+        }
+
+        private void gaussianHighPassFilterMenuItem_Click(object sender, EventArgs e)
+        {
+            In_frequencyDialog frequencyDialog = new In_frequencyDialog(this);
+            if (frequencyDialog.ShowDialog() != DialogResult.OK)
+                return;
+
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+            picBox_NewBtmp.Image = FrequencyDomain.HighPassFilter.applyGaussianFilter(oldImage, D0);
+            stopWatch.Stop();
+            // Get the elapsed time as a TimeSpan value.
+            TimeSpan ts = stopWatch.Elapsed;
+            ProcessingTimeLabel.Text = "Processing Time : " + String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+                           ts.Hours, ts.Minutes, ts.Seconds,
+                           ts.Milliseconds / 10);
+            ProcessingTimeLabel.Visible = true;
+
+        }
+
+        private void butterWorthLowPassFilterMenuItem_Click(object sender, EventArgs e)
+        {
+            In_frequencyDialog frequencyDialog = new In_frequencyDialog(this);
+            ButterWorth_FactorDialog factorDialog = new ButterWorth_FactorDialog(this);
+
+            if (frequencyDialog.ShowDialog() != DialogResult.OK) 
+                return;
+            if (factorDialog.ShowDialog() != DialogResult.OK)
+                return;
+
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+            picBox_NewBtmp.Image = FrequencyDomain.LowPassFilter.applyButterWorthFilter(oldImage, D0,ButterWorthFactor);
+            stopWatch.Stop();
+            // Get the elapsed time as a TimeSpan value.
+            TimeSpan ts = stopWatch.Elapsed;
+            ProcessingTimeLabel.Text = "Processing Time : " + String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+                           ts.Hours, ts.Minutes, ts.Seconds,
+                           ts.Milliseconds / 10);
+            ProcessingTimeLabel.Visible = true;
+        }
+
+        private void butterWorthHighPassFilterMenuItem_Click(object sender, EventArgs e)
+        {
+            In_frequencyDialog frequencyDialog = new In_frequencyDialog(this);
+            ButterWorth_FactorDialog factorDialog = new ButterWorth_FactorDialog(this);
+
+            if (frequencyDialog.ShowDialog() != DialogResult.OK)
+                return;
+            if (factorDialog.ShowDialog() != DialogResult.OK)
+                return;
+
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+            picBox_NewBtmp.Image = FrequencyDomain.HighPassFilter.applyButterWorthFilter(oldImage, D0, ButterWorthFactor);
+            stopWatch.Stop();
+            // Get the elapsed time as a TimeSpan value.
+            TimeSpan ts = stopWatch.Elapsed;
+            ProcessingTimeLabel.Text = "Processing Time : " + String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+                           ts.Hours, ts.Minutes, ts.Seconds,
+                           ts.Milliseconds / 10);
+            ProcessingTimeLabel.Visible = true;
+
         }
 
 
